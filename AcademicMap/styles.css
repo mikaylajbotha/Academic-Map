@@ -1,0 +1,143 @@
+body, h1, h2, h3, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Color Variables */
+:root {
+    --primary-color: #d32f2f; /* Red */
+    --secondary-color: #c0c0c0; 
+    --background-color: #fff;  /* White */
+    --text-color: #333;        
+    --highlight-color: #ffeb3b; /* Light Yellow for highlight */
+    --bold-text-color: #000;  /* Black for bold text */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color); 
+    border-radius: 8px; 
+}
+
+
+.title-section {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color); /* Red background for the title section */
+    color: var(--background-color); /* White text */
+    border-bottom: 2px solid var(--secondary-color); 
+}
+
+.title-section h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--background-color); /* White text for title */
+}
+
+.title-section img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+    margin: 20px auto; /* Center the image with margin */
+}
+
+.title-section h1, .title-section h2, .title-section h3 {
+    color: var(--background-color); /* White color for text in the title section */
+}
+
+
+h1, h2 {
+    color: var(--primary-color); /* Red color for main headings */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+}
+
+
+.academic-map-title, .year-heading {
+    color: var(--bold-text-color); 
+    font-weight: bold; 
+}
+
+/* Table Styles */
+.academic-year {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.academic-year th, .academic-year td {
+    border: 1px solid var(--secondary-color);
+    padding: 8px;
+    text-align: left;
+}
+
+.academic-year th {
+    background-color: var(--primary-color); /* Red background for headers */
+    color: var(--background-color); /* White text for headers */
+}
+
+.academic-year tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.course-link {
+    cursor: pointer;
+    color: var(--primary-color); 
+    text-decoration: underline;
+    display: flex;
+    justify-content: space-between; /* Align course title and hours */
+    align-items: center;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.course-link:hover {
+    background-color: var(--highlight-color); /* Light yellow highlight on hover */
+    color: var(--text-color); 
+    text-decoration: none;
+    padding: 5px; 
+    border-radius: 3px;
+}
+
+/* Course Hours Styles */
+.course-hours {
+    font-weight: bold;
+    color: var(--text-color); /* text color for credit hours */
+}
+
+/* Semester Hours Styles */
+.semester-hours {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color); /* text color for semester hours */
+}
+
+
+.course-description {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+}
