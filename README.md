@@ -1,5 +1,3 @@
-# Academic-Map
-
 # BS Computer Science Academic Map
 
 This project is an interactive **Academic Map** for the Bachelor of Science in Computer Science program. It provides a four-year plan with clickable courses that display detailed course descriptions.
