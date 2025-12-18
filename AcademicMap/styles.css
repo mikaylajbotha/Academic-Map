@@ -1,3 +1,4 @@
+/* Reset default margin, padding, and border for common elements; set base font */
 body, h1, h2, h3, p, table, th, td {
     margin: 0;
     padding: 0;
@@ -5,62 +6,67 @@ body, h1, h2, h3, p, table, th, td {
     font-family: Arial, sans-serif;
 }
 
-/* Color Variables */
+/* CSS Variables for consistent theming across the page */
 :root {
-    --primary-color: #d32f2f; /* Red */
-    --secondary-color: #c0c0c0; 
-    --background-color: #fff;  /* White */
-    --text-color: #333;        
-    --highlight-color: #ffeb3b; /* Light Yellow for highlight */
-    --bold-text-color: #000;  /* Black for bold text */
+    --primary-color: #d32f2f; /* Primary theme color - Red, used for headings and important elements */
+    --secondary-color: #c0c0c0; /* Secondary color - Gray, used for borders and separators */
+    --background-color: #fff;  /* Page background color - White */
+    --text-color: #333;        /* Default text color - Dark gray */
+    --highlight-color: #ffeb3b; /* Highlight color - Light yellow for hover effects */
+    --bold-text-color: #000;  /* Black text for bold or emphasized headings */
 }
 
+/* Base styles for the body */
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.6; /* Improve readability */
 }
 
+/* Main container for page content */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 90%; /* Responsive width */
+    max-width: 1200px; /* Limit container size on large screens */
+    margin: 0 auto; /* Center container horizontally */
     padding: 20px;
     background-color: var(--background-color);
     border: 1px solid var(--secondary-color); 
-    border-radius: 8px; 
+    border-radius: 8px; /* Rounded corners for a soft appearance */
 }
 
-
+/* Title section containing college info and map heading */
 .title-section {
-    text-align: center;
+    text-align: center; /* Center all content in this section */
     padding: 20px;
-    background-color: var(--primary-color); /* Red background for the title section */
-    color: var(--background-color); /* White text */
-    border-bottom: 2px solid var(--secondary-color); 
+    background-color: var(--primary-color); /* Red background for title area */
+    color: var(--background-color); /* White text for contrast */
+    border-bottom: 2px solid var(--secondary-color); /* Decorative border */
 }
 
+/* Title heading styles */
 .title-section h1 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
-    color: var(--background-color); /* White text for title */
+    color: var(--background-color); /* Ensure white text */
 }
 
+/* University logo styling */
 .title-section img {
     display: block;
     max-width: 100%; 
     height: auto;
-    margin: 20px auto; /* Center the image with margin */
+    margin: 20px auto; /* Center image horizontally with spacing */
 }
 
+/* Ensure all headings in title section are white */
 .title-section h1, .title-section h2, .title-section h3 {
-    color: var(--background-color); /* White color for text in the title section */
+    color: var(--background-color);
 }
 
-
+/* Primary headings on the page */
 h1, h2 {
-    color: var(--primary-color); /* Red color for main headings */
+    color: var(--primary-color); /* Red headings for main sections */
 }
 
 h1 {
@@ -73,68 +79,77 @@ h2 {
     margin: 20px 0 10px;
 }
 
-
+/* Bold headings for academic map and year sections */
 .academic-map-title, .year-heading {
     color: var(--bold-text-color); 
     font-weight: bold; 
 }
 
-/* Table Styles */
+/* --- Table Styles --- */
+
+/* Academic year table */
 .academic-year {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    border-collapse: collapse; /* Remove spacing between cells */
+    margin-bottom: 20px; /* Space between tables */
 }
 
+/* Table cells */
 .academic-year th, .academic-year td {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color); /* Light gray borders */
     padding: 8px;
     text-align: left;
 }
 
+/* Table headers */
 .academic-year th {
     background-color: var(--primary-color); /* Red background for headers */
-    color: var(--background-color); /* White text for headers */
+    color: var(--background-color); /* White text for contrast */
 }
 
+/* Zebra striping for table rows for readability */
 .academic-year tr:nth-child(even) {
     background-color: #f9f9f9; 
 }
 
+/* --- Course Links --- */
+
+/* Each course is a clickable element */
 .course-link {
-    cursor: pointer;
-    color: var(--primary-color); 
-    text-decoration: underline;
+    cursor: pointer; /* Pointer to indicate clickable item */
+    color: var(--primary-color); /* Red text for emphasis */
+    text-decoration: underline; /* Indicate link behavior */
     display: flex;
-    justify-content: space-between; /* Align course title and hours */
+    justify-content: space-between; /* Align course title and credit hours */
     align-items: center;
-    margin-bottom: 5px;
-    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Space between courses */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Hover effect for course links */
 .course-link:hover {
-    background-color: var(--highlight-color); /* Light yellow highlight on hover */
+    background-color: var(--highlight-color); /* Highlight on hover */
     color: var(--text-color); 
     text-decoration: none;
     padding: 5px; 
-    border-radius: 3px;
+    border-radius: 3px; /* Rounded corners on hover */
 }
 
-/* Course Hours Styles */
+/* Credit hours displayed next to course */
 .course-hours {
     font-weight: bold;
-    color: var(--text-color); /* text color for credit hours */
+    color: var(--text-color); /* Match main text color */
 }
 
-/* Semester Hours Styles */
+/* Semester hours displayed at bottom of semester column */
 .semester-hours {
     margin-top: 5px;
     font-size: 14px;
     font-weight: bold;
-    color: var(--text-color); /* text color for semester hours */
+    color: var(--text-color);
 }
 
-
+/* --- Course Description Section --- */
 .course-description {
     margin-top: 20px;
     padding: 10px;
