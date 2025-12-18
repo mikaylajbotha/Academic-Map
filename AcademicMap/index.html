@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for the page -->
     <meta charset="UTF-8">
+    <!-- Ensures the page is responsive on all devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title displayed in the browser tab -->
     <title>BS Computer Science Academic Map</title>
+    <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to JavaScript file that handles course link clicks; 'defer' ensures it runs after HTML parsing -->
     <script src="app.js" defer></script>
 </head>
 <body>
+    <!-- Main container for the entire page -->
     <div class="container">
+
+        <!-- Title section containing college info, degree, and academic map year -->
         <div class="title-section">
             <h1>COLLEGE OF NATURAL SCIENCES & MATHEMATICS</h1>
             <h2>Bachelor of Science, Computer Science</h2>
             <h3>Four-Year Academic Map 2024-2025</h3>
+            <!-- University logo image -->
             <img src="uh.png" alt="University Logo">
         </div>
 
+        <!-- Main heading for the academic map -->
         <h1 class="academic-map-title">BS Computer Science - Academic Map</h1>
 
         <!-- Year 1 Table -->
@@ -30,7 +40,9 @@
             </thead>
             <tbody>
                 <tr>
+                    <!-- Fall Semester courses -->
                     <td>
+                        <!-- Each course is a clickable div with a data-course attribute for JS -->
                         <div class="course-link" data-course="COSC 1336">
                             COSC 1336 - Computer Science & Programming <span class="course-hours">3</span>
                         </div>
@@ -46,8 +58,11 @@
                         <div class="course-link" data-course="CORE Language, Philosophy, Culture">
                             CORE Language, Philosophy, Culture <span class="course-hours">3</span>
                         </div>
+                        <!-- Total semester hours for Fall -->
                         <div class="semester-hours">Semester Hours: 16</div>
                     </td>
+
+                    <!-- Spring Semester courses -->
                     <td>
                         <div class="course-link" data-course="COSC 1437">
                             COSC 1437 - Introduction to Programming <span class="course-hours">4</span>
@@ -64,8 +79,11 @@
                         <div class="course-link" data-course="CORE Language, Philosophy, Culture">
                             CORE Language, Philosophy, Culture <span class="course-hours">3</span>
                         </div>
+                        <!-- Total semester hours for Spring -->
                         <div class="semester-hours">Semester Hours: 14</div>
                     </td>
+
+                    <!-- Total hours for the year -->
                     <td>30</td>
                 </tr>
             </tbody>
@@ -83,6 +101,7 @@
             </thead>
             <tbody>
                 <tr>
+                    <!-- Year 2 Fall courses -->
                     <td>
                         <div class="course-link" data-course="COSC 2425">
                             COSC 2425 - Computer Org. & Architecture <span class="course-hours">4</span>
@@ -101,6 +120,8 @@
                         </div>
                         <div class="semester-hours">Semester Hours: 16</div>
                     </td>
+
+                    <!-- Year 2 Spring courses -->
                     <td>
                         <div class="course-link" data-course="COSC 2436">
                             COSC 2436 - Programming & Data Structures <span class="course-hours">4</span>
@@ -119,6 +140,8 @@
                         </div>
                         <div class="semester-hours">Semester Hours: 16</div>
                     </td>
+
+                    <!-- Total hours for Year 2 -->
                     <td>32</td>
                 </tr>
             </tbody>
@@ -136,6 +159,7 @@
             </thead>
             <tbody>
                 <tr>
+                    <!-- Year 3 Fall courses -->
                     <td>
                         <div class="course-link" data-course="COSC 3320">
                             COSC 3320 - Algorithms & Data Structures <span class="course-hours">3</span>
@@ -154,6 +178,8 @@
                         </div>
                         <div class="semester-hours">Semester Hours: 16</div>
                     </td>
+
+                    <!-- Year 3 Spring courses -->
                     <td>
                         <div class="course-link" data-course="COSC 3360">
                             COSC 3360 - Fundamentals of Operating Systems <span class="course-hours">3</span>
@@ -169,6 +195,8 @@
                         </div>
                         <div class="semester-hours">Semester Hours: 13</div>
                     </td>
+
+                    <!-- Total hours for Year 3 -->
                     <td>29</td>
                 </tr>
             </tbody>
@@ -186,6 +214,7 @@
             </thead>
             <tbody>
                 <tr>
+                    <!-- Year 4 Fall courses -->
                     <td>
                         <div class="course-link" data-course="COSC XXXX">
                             COSC XXXX - COSC Advanced Elective <span class="course-hours">3</span>
@@ -204,6 +233,8 @@
                         </div>
                         <div class="semester-hours">Semester Hours: 15</div>
                     </td>
+
+                    <!-- Year 4 Spring courses -->
                     <td>
                         <div class="course-link" data-course="COSC XXXX">
                             COSC XXXX - COSC Advanced Elective <span class="course-hours">3</span>
@@ -219,6 +250,8 @@
                         </div>
                         <div class="semester-hours">Semester Hours: 12</div>
                     </td>
+
+                    <!-- Total hours for Year 4 -->
                     <td>27</td>
                 </tr>
             </tbody>
